@@ -92,7 +92,7 @@ MELODIC_ARCH = {
 }
 
 DIATONIC_BIAS = {
-    'bias' : .9
+    'bias' : .2
 }
 
 DURATION_INERTIA = {

@@ -1,5 +1,4 @@
 import random
-# import math
 
 def get_table_sampler(table):
     if table is None:

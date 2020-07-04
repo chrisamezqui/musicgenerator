@@ -6,8 +6,8 @@ from utils import *
 #dynamically keep track of current song's metadata
 class GeneratorState:
 
-    def __init__(self, median, history=None):
-        self.history = history if history is not None else []
+    def __init__(self, median, history=[]):
+        self.history = history
         self.median = median
 
     def update(self,freq, midi, dur):
@@ -149,7 +149,7 @@ class MusicGenerator:
             freq = midiToHz(midi)
             self.state.update(freq, midi, timing_dur)
 
-            print("o" * (midi // 5))
+            print("o" * (midi - self.midi_vals[0] + 1), flush=True)
 
             # Replace oscillator's frequencies.
             self.osc .freq = [freq, freq * 1.003]
