@@ -1,5 +1,5 @@
 enum34==1.1.10
-numpy==1.18.3
+numpy==1.22.0
 Pillow==7.1.2
 pyo==1.0.1
 scipy==1.4.1
